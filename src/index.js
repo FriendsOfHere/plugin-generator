@@ -9,6 +9,8 @@ const editor = require('mem-fs-editor');
 const yosay = require('yosay');
 const ora = require('ora');
 const { reset } = require('chalk');
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
 
 const licenseList = Array.from(require('spdx-license-list/simple'));
 
@@ -27,6 +29,8 @@ const fs = editor.create(store);
 const onCancel = () => process.exit();
 const initial = true;
 let spinner;
+
+updateNotifier({pkg}).notify();
 
 console.log(yosay('Welcome to a Here plugin generator\n\n- FriendsOfHere'));
 
