@@ -12,18 +12,16 @@ const net = require("net")
 
 function updateData() {
 
-    //miniWindow    
-    here.setMiniWindow({ title: "Hello MiniWindow", detail: "This is a demo here plugin" })
-
-    // Menu Bar
-    here.setMenuBar({ title: "Hello Menu Bar"})
-
-    // Dock
+<% if (renderComponents.includes('mini')) { %>    //miniWindow    
+    here.setMiniWindow({ title: "Hello MiniWindow", detail: "This is a demo here plugin" })<% } %>
+<% if (renderComponents.includes('menuBar')) { %>    // Menu Bar
+    here.setMenuBar({ title: "Hello Menu Bar"})<% } %>
+<% if (renderComponents.includes('dock')) { %>    // Dock
     here.setDock({
         title: "Hello",
         detail: "Dock"
-    })
-        
+    })<% } %>
+
 }
 
 here.onLoad(() => {
