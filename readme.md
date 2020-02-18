@@ -12,7 +12,7 @@ npx @friendsofhere/create-here-plugin [dir]
 Normally:
 ```sh
 npm install -g @friendsofhere/create-here-extension
-create-here-extension [dir]
+here [dir] or create-here-extension [-p] [dir]
 ```
 
 ## Here Resources
