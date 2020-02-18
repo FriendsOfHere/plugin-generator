@@ -2,7 +2,7 @@
 
 ![License](https://img.shields.io/badge/license-<%= license %>-blue.svg)
 
-A [Here](http://here.app/) plugin. <%= pluginDescription %>
+A [Here](https://here.app) plugin. <%= pluginDescription %>
 
 ### Installation
 
