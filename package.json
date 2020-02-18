@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Scaffold out a Here plugin",
   "main": "src/index.js",
+  "bin": {
+    "create-here-plugin": "src/index.js",
+    "here": "src/index.js"
+  },
   "license": "MIT",
   "keywords": [
     "here",
