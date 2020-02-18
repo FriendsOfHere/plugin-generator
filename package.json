@@ -1,0 +1,28 @@
+{
+  "name": "@friendsofhere/create-here-plugin",
+  "version": "1.0.0",
+  "description": "Scaffold out a Here plugin",
+  "main": "src/index.js",
+  "license": "MIT",
+  "keywords": [
+    "here",
+    "plugin",
+    "generator",
+    "scaffold"
+  ],
+  "author": {
+    "name": "Lifesign",
+    "email": "lifesign.me@gmail.com",
+    "url": "https://github.com/lifesign"
+  },
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "homepage": "https://github.com/FriendsOfHere/plugin-generator#readme",
+  "repository": "github:FriendsOfHere/plugin-generator",
+  "bugs": {
+    "url": "https://github.com/FriendsOfHere/plugin-generator/issues"
+  }
+}
