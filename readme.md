@@ -22,3 +22,4 @@ create-here-extension [dir]
 - [GitHub](https://github.com/FriendsOfHere/plugin-generator)
 
 A utility by [FriendsOfHere](https://github.com/FriendsOfHere).
+Heavily inspired by [extension-generator](https://github.com/FriendsOfFlarum/extension-generator)
