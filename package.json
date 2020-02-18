@@ -10,19 +10,28 @@
     "generator",
     "scaffold"
   ],
+  "homepage": "https://github.com/FriendsOfHere/plugin-generator#readme",
+  "repository": "github:FriendsOfHere/plugin-generator",
+  "bugs": {
+    "url": "https://github.com/FriendsOfHere/plugin-generator/issues"
+  },
   "author": {
     "name": "Lifesign",
     "email": "lifesign.me@gmail.com",
     "url": "https://github.com/lifesign"
   },
-  "scripts": {
-  },
+  "scripts": {},
   "engines": {
     "node": ">=8"
   },
-  "homepage": "https://github.com/FriendsOfHere/plugin-generator#readme",
-  "repository": "github:FriendsOfHere/plugin-generator",
-  "bugs": {
-    "url": "https://github.com/FriendsOfHere/plugin-generator/issues"
+  "dependencies": {
+    "args": "^5.0.0",
+    "chalk": "^3.0.0",
+    "mem-fs": "^1.1.3",
+    "mem-fs-editor": "^6.0.0",
+    "ora": "^4.0.3",
+    "prompts": "^2.3.0",
+    "spdx-license-list": "^6.1.0",
+    "yosay": "^2.0.2"
   }
 }

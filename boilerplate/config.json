@@ -1,0 +1,16 @@
+{
+   "name": "<%= pluginName %>",
+   "version": "1.0.0",
+   "identifier": "<%= pluginIdentifier %>",<% if (pluginDescription) { %>
+   "description": "<%= pluginDescription %>",<% } %>
+   "icon": "icon.png",<% if (authorName) { %>
+   "createdBy": "<%= authorName %>",<% } %><% if (authorWebsite) { %>
+   "website": "<%= authorWebsite %>",<% } %>
+   "script": "index.js",
+   "defaultCategory": "<%= defaultCategory %>",
+   "displayOn": [
+      "mini",
+      "menuBar",
+      "dock"
+   ]
+}
