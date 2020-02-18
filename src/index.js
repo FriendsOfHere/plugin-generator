@@ -75,7 +75,10 @@ new Promise((resolve, reject) => {
           type: 'text',
           message: `Identifier ${reset.dim('(app.here.identifier)')}`,
           validate: s =>
-            /^app\.here\.([a-zA-Z-]{2,})$/.test(s.trim()) ||
+            // discussed with Here group, no limit naming convention with `app.here` prefix for now
+            // /^app\.here\.([a-zA-Z-]{2,})$/.test(s.trim()) ||
+            // Use Java Package Name Style convention
+            /^([a-zA-Z-]{2,}).([a-zA-Z-]{2,}).([a-zA-Z-]{2,})$/.test(s.trim()) ||
             'Invalid package name format',
           format: s => s.toLowerCase(),
           initial: "app.here.helloworld"
