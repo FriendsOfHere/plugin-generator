@@ -7,10 +7,6 @@
    "createdBy": "<%= authorName %>",<% } %><% if (authorWebsite) { %>
    "website": "<%= authorWebsite %>",<% } %>
    "script": "index.js",
-   "defaultCategory": "<%= defaultCategory %>",
-   "displayOn": [
-      "mini",
-      "menuBar",
-      "dock"
-   ]
+   "defaultCategory": "<%= defaultCategory %>",<% if (renderComponents) { %>
+   "displayOn": <%- JSON.stringify(renderComponents) %> <% } %>
 }

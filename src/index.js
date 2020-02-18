@@ -116,6 +116,17 @@ new Promise((resolve, reject) => {
             ]
         },
         {
+          type: 'multiselect',
+          name: 'renderComponents',
+          message: 'Pick render components',
+          choices: [
+            { title: 'Mini window', value: 'mini', selected: true },
+            { title: 'Menu bar', value: 'menuBar', selected: true },
+            { title: 'Dock', value: 'dock', selected: true }
+          ],
+          hint: '- Space to select. Return to submit'
+        },
+        {
           name: 'license',
           type: 'autocomplete',
           message: 'License',
