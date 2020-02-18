@@ -1,4 +1,1 @@
-js/src export-ignore
 .git* export-ignore
-
-js/dist/*.js -diff
