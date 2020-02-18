@@ -10,7 +10,7 @@
 function updateData() {
 
     //miniWindow    
-    here.setMiniWindow({ title: "Hello MiniWindow" })
+    here.setMiniWindow({ title: "Hello MiniWindow", detail: "This is a demo here plugin" })
 
     // Menu Bar
     here.setMenuBar({ title: "Hello MenuBar"})
