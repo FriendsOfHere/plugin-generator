@@ -16,10 +16,13 @@ function updateData() {
     here.setMiniWindow({ title: "Hello MiniWindow", detail: "This is a demo here plugin" })
 
     // Menu Bar
-    here.setMenuBar({ title: "Hello MenuBar"})
+    here.setMenuBar({ title: "Hello Menu Bar"})
 
     // Dock
-    here.setDock({ title: "Hello Dock" })
+    here.setDock({
+        title: "Hello",
+        detail: "Dock"
+    })
         
 }
 
