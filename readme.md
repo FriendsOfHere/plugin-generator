@@ -16,9 +16,14 @@ here [dir] or create-here-extension [-p] [dir]
 ```
 
 ## Here Resources
+* Website：https://here.app
+* Document：https://doc.here.app
+* Release Notes：https://here.app/release-notes.html
+* Plugins Repo：https://github.com/hereappdev/Here-Plugins
 
 ## Links
 
+- [NPM](https://www.npmjs.com/package/@friendsofhere/create-here-plugin)
 - [GitHub](https://github.com/FriendsOfHere/plugin-generator)
 
 A utility by [FriendsOfHere](https://github.com/FriendsOfHere).
