@@ -2,6 +2,8 @@
 
 Create a Here plugin from a boilerplate in minutes!
 
+[![asciicast](https://asciinema.org/a/dy6rjTfRKQBIklAQfjzY5XemW.svg)](https://asciinema.org/a/dy6rjTfRKQBIklAQfjzY5XemW)
+
 ## Quick Overview
 
 Using `npx` (npx comes with npm 5.2+ and higher):
