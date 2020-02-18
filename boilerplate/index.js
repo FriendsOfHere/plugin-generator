@@ -7,6 +7,9 @@
  * file that was distributed with this source code.
  */
 
+const _ = require("lodash")
+const net = require("net")
+
 function updateData() {
 
     //miniWindow    
