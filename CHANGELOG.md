@@ -24,4 +24,4 @@ All notable changes to this project will be documented in this file. See [standa
 <a name="1.0.0"></a>
 # 1.0.0 (2020-02-18)
 
-Initial release
+* Initial release
