@@ -145,7 +145,14 @@ new Promise((resolve, reject) => {
     mv('gitattributes', '.gitattributes');
 
     const license = require(`spdx-license-list/licenses/${data.license}`);
-    fs.write(path.resolve(dir, 'LICENSE.md'), license.licenseText);
+    
+    let licenseFilledText = license.licenseText
+          .replace("<year>", new Date().getFullYear());
+    if (data.authorName != "") {
+        licenseFilledText = licenseFilledText.replace("<copyright holders>", data.authorName);
+    }
+
+    fs.write(path.resolve(dir, 'LICENSE.md'), licenseFilledText);
 
     return new Promise((resolve, reject) => {
       fs.commit(err => {
