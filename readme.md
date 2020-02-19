@@ -8,7 +8,20 @@ Create a Here plugin from a boilerplate in minutes!
 
 ```sh
 npm install -g @friendsofhere/create-here-plugin
-here [dir] or create-here-plugin [-p] [dir]
+```
+
+## Usage
+
+use `here` or `create-here-plugin` in current directory
+```sh
+here [dir]
+create-here-plugin [dir]
+```
+
+or use `-p` option as your root directory
+```sh
+here -p [dir]
+create-here-plugin -p [dir]
 ```
 
 ## Here Resources
