@@ -16,7 +16,7 @@ const licenseList = Array.from(require('spdx-license-list/simple'));
 
 args.option(
   'path',
-  'The root directory in which to create the Flarum extension',
+  'The root directory in which to create the Here plugin',
   process.cwd(),
   p => path.resolve(p)
 );
