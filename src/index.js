@@ -9,6 +9,8 @@ const editor = require('mem-fs-editor');
 const yosay = require('yosay');
 const ora = require('ora');
 const { reset } = require('chalk');
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
 
 const licenseList = Array.from(require('spdx-license-list/simple'));
 
@@ -27,6 +29,8 @@ const fs = editor.create(store);
 const onCancel = () => process.exit();
 const initial = true;
 let spinner;
+
+updateNotifier({pkg}).notify();
 
 console.log(yosay('Welcome to a Here plugin generator\n\n- FriendsOfHere'));
 
@@ -114,6 +118,17 @@ new Promise((resolve, reject) => {
                 { title: 'News', description: 'news category', value: 'news' },
                 { title: 'Quick', description: 'quick category', value: 'quick' },
             ]
+        },
+        {
+          type: 'multiselect',
+          name: 'renderComponents',
+          message: 'Pick render components',
+          choices: [
+            { title: 'Mini window', value: 'mini', selected: true },
+            { title: 'Menu bar', value: 'menuBar', selected: true },
+            { title: 'Dock', value: 'dock', selected: true }
+          ],
+          hint: '- Space to select. Return to submit'
         },
         {
           name: 'license',
