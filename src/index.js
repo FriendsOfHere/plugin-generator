@@ -16,7 +16,7 @@ const licenseList = Array.from(require('spdx-license-list/simple'));
 
 args.option(
   'path',
-  'The root directory in which to create the Flarum extension',
+  'The root directory in which to create the Here plugin',
   process.cwd(),
   p => path.resolve(p)
 );
@@ -32,7 +32,7 @@ let spinner;
 
 updateNotifier({pkg}).notify();
 
-console.log(yosay('Welcome to a Here plugin generator\n\n- FriendsOfHere'));
+console.log(yosay(`Welcome to a Here plugin generator(V${pkg.version})\n\n- FriendsOfHere`));
 
 new Promise((resolve, reject) => {
   spinner = ora('Starting...').start();

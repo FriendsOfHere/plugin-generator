@@ -4,24 +4,31 @@ Create a Here plugin from a boilerplate in minutes!
 
 [![asciicast](https://asciinema.org/a/dy6rjTfRKQBIklAQfjzY5XemW.svg)](https://asciinema.org/a/dy6rjTfRKQBIklAQfjzY5XemW)
 
-## Quick Overview
+## Installation
 
-Using `npx` (npx comes with npm 5.2+ and higher):
-```sh
-npx @friendsofhere/create-here-plugin [dir]
-```
-
-Normally:
 ```sh
 npm install -g @friendsofhere/create-here-plugin
-here [dir] or create-here-plugin [-p] [dir]
+```
+
+## Usage
+
+use `here` or `create-here-plugin` in current directory
+```sh
+here [dir]
+create-here-plugin [dir]
+```
+
+or use `-p` option as your root directory
+```sh
+here -p [dir]
+create-here-plugin -p [dir]
 ```
 
 ## Here Resources
 * Website：https://here.app
 * Document：https://doc.here.app
 * Release Notes：https://here.app/release-notes.html
-* Plugins Repo：https://github.com/hereappdev/Here-Plugins
+* Official Plugins Repo：https://github.com/hereappdev/Here-Plugins
 
 ## Links
 
