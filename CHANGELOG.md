@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Feature
 
 * Add pick render components choices
+* Add update notifier
 
 <a name="1.1.1"></a>
 # [1.1.1](https://github.com/FriendsOfHere/plugin-generator/compare/v1.1.0...v1.1.1) (2020-02-18)
