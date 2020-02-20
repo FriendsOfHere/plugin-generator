@@ -12,16 +12,14 @@ npm install -g @friendsofhere/create-here-plugin
 
 ## Usage
 
-Use `here` or `create-here-plugin` in current directory
+Use `here` in current directory
 ```console
 here [dir]
-create-here-plugin [dir]
 ```
 
 Or use `-p` option as your root directory
 ```console
 here -p [dir]
-create-here-plugin -p [dir]
 ```
 
 ## Here Resources

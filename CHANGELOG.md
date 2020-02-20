@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+
+<a name="1.3.0"></a>
+# [1.3.0](https://github.com/FriendsOfHere/plugin-generator/compare/v1.3.0...v1.2.1) (2020-02-20)
+
+### Improve
+
+* remove `create-here-plugin` bin for simplicity
+* refactor override behavior, instead of delete target folder, extract boilerplate to a single folder
+
 <a name="1.2.1"></a>
 # [1.2.1](https://github.com/FriendsOfHere/plugin-generator/compare/v1.2.1...v1.2.0) (2020-02-19)
 
