@@ -6,20 +6,20 @@ Create a Here plugin from a boilerplate in minutes!
 
 ## Installation
 
-```sh
+```console
 npm install -g @friendsofhere/create-here-plugin
 ```
 
 ## Usage
 
-use `here` or `create-here-plugin` in current directory
-```sh
+Use `here` or `create-here-plugin` in current directory
+```console
 here [dir]
 create-here-plugin [dir]
 ```
 
-or use `-p` option as your root directory
-```sh
+Or use `-p` option as your root directory
+```console
 here -p [dir]
 create-here-plugin -p [dir]
 ```
@@ -35,5 +35,5 @@ create-here-plugin -p [dir]
 - [NPM](https://www.npmjs.com/package/@friendsofhere/create-here-plugin)
 - [GitHub](https://github.com/FriendsOfHere/plugin-generator)
 
-A utility by [FriendsOfHere](https://github.com/FriendsOfHere).
+An utility by [FriendsOfHere](https://github.com/FriendsOfHere).
 Heavily inspired by [extension-generator](https://github.com/FriendsOfFlarum/extension-generator)
