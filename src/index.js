@@ -25,10 +25,11 @@ const flags = args.parse(process.argv);
 const dir = (args.sub[0] && path.resolve(args.sub[0])) || flags.path;
 const store = memFs.create();
 const fs = editor.create(store);
-
 const onCancel = () => process.exit();
 const initial = true;
+
 let spinner;
+let extractToSingleFolder = false;
 
 updateNotifier({pkg}).notify();
 
@@ -51,18 +52,20 @@ new Promise((resolve, reject) => {
           initial,
         },
         {
-          name: 'overwrite',
+          name: 'extractToFolder',
           type: prev => prev && exists && 'confirm',
-          message: 'Directory not empty. Overwrite?',
+          message: 'Directory not empty. Extract to a single folder?',
+          initial,
         },
       ],
       { onCancel }
     )
   )
-  .then(({ verify, overwrite }) => {
-    if (!verify || overwrite === false) return process.exit();
-
-    if (overwrite) fs.delete(dir);
+  .then(({ verify, extractToFolder }) => {
+    if (!verify) return process.exit();
+    if (extractToFolder) {
+      extractToSingleFolder = extractToFolder;
+    }
 
     process.stdout.write('\n');
 
@@ -150,14 +153,16 @@ new Promise((resolve, reject) => {
       year: new Date().getFullYear(),
     });
 
-    const mv = (from, to) =>
-      fs.move(path.resolve(dir, from), path.resolve(dir, to));
-    const rename = (from, to) =>
-      filesystem.renameSync(path.resolve(dir, from), path.resolve(dir, to));
-    const del = f => fs.delete(path.resolve(dir, f));
+    const destDir = extractToSingleFolder ? `${dir}/${data.pluginIdentifier}`: dir
     const boilerplate = path.resolve(__dirname, '../boilerplate/**');
 
-    fs.copyTpl(boilerplate, dir, tpl);
+    const mv = (from, to) =>
+      fs.move(path.resolve(destDir, from), path.resolve(destDir, to));
+    const rename = (from, to) =>
+      filesystem.renameSync(path.resolve(destDir, from), path.resolve(destDir, to));
+    const del = f => fs.delete(path.resolve(destDir, f));
+
+    fs.copyTpl(boilerplate, destDir, tpl);
     //git stuff
     mv('gitignore', '.gitignore');
     mv('gitattributes', '.gitattributes');
@@ -170,7 +175,7 @@ new Promise((resolve, reject) => {
         licenseFilledText = licenseFilledText.replace("<copyright holders>", data.authorName);
     }
 
-    fs.write(path.resolve(dir, 'LICENSE.md'), licenseFilledText);
+    fs.write(path.resolve(destDir, 'LICENSE.md'), licenseFilledText);
 
     return new Promise((resolve, reject) => {
       fs.commit(err => {
