@@ -2,16 +2,25 @@
 
 ![License](https://img.shields.io/badge/license-<%= license %>-blue.svg)
 
-A [Here](https://here.app) plugin. <%= pluginDescription %>
+> A [Here](https://here.app) plugin. <%= pluginDescription %>
 
-### Installation
+[中文说明](./README_zh.md)
 
-Double-click `.hereplugin`
+## Installation
 
-### Updating
+### One Click  (Recommend)
 
-Right click on the plugin to Check for Updates
+👉 <a href="https://jump.here.app/?installPlugin?title=i18n&url=https://github.com/FriendsOfHere/<%= pluginIdentifier.split('.').pop() %>/releases/latest/download/app.here.<%= pluginIdentifier.split('.').pop() %>.hereplugin">Click Here 🔌</a>
 
-### License
+### Manually
+1. Go [releases](https://github.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/releases/latest/) page
+2. Download the latest release & double click the `app.here.<%= pluginIdentifier.split(".").pop() %>.hereplugin`
 
-The plugin is published under the [<%= license %> License](./LICENSE.md)
+## Feature
+- TBD
+
+## Usage
+- TBD
+
+## License
+This plugin is published under the [MIT License](./LICENSE.md)
