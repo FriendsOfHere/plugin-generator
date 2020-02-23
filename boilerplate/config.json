@@ -9,5 +9,6 @@
    "appcast": "https://raw.githubusercontent.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/master/appcast.xml",
    "script": "index.js",
    "defaultCategory": "<%= defaultCategory %>",<% if (renderComponents) { %>
-   "displayOn": <%- JSON.stringify(renderComponents) %> <% } %>
+   "displayOn": <%- JSON.stringify(renderComponents) %>, <% } %><% if (preferences) { %>
+   "preferences": <%- JSON.stringify(preferences,null,4) %> <% } %>
 }

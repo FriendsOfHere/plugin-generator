@@ -136,6 +136,17 @@ new Promise((resolve, reject) => {
           hint: '- Space to select. Return to submit'
         },
         {
+          type: 'multiselect',
+          name: 'preferences',
+          message: 'Add preferences',
+          choices: [
+            { title: 'Text', value: {"title":"Your-Text-Title","type":"text","key":"your-key-text","default":"default-text-value"}, selected: true },
+            { title: 'Popup', value: {"title":"Your-Popup-Title","type":"popup","key":"your-key-popup","default":0,"options":["option-1","option-2"]}, selected: true },
+            { title: 'Checkbox', value: {"title":"Your-Checkbox-Title","type":"checkbox","key":"your-key-checkbox","default":false}, selected: true }
+          ],
+          hint: '- Space to select. Return to submit'
+        },
+        {
           name: 'license',
           type: 'autocomplete',
           message: 'License',
