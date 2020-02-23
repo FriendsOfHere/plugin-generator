@@ -33,7 +33,7 @@ let extractToSingleFolder = false;
 
 updateNotifier({pkg}).notify();
 
-console.log(yosay(`Welcome to a Here plugin generator(V${pkg.version})\n\n- FriendsOfHere`));
+console.log(yosay(`Welcome to a Here plugin generator(V${pkg.version})\n\n{FOH Edition}\n\n- FriendsOfHere`));
 
 new Promise((resolve, reject) => {
   spinner = ora('Starting...').start();
