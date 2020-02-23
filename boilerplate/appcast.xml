@@ -3,7 +3,7 @@
     xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
         <item>
-            <enclosure url="https://plugins.herecdn.com/downloads/<%= pluginIdentifier %>.hereplugin" sparkle:version="1.0.0"/>
+            <enclosure url="https://github.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/releases/download/1.0.0/<%= pluginIdentifier %>.hereplugin" sparkle:version="1.0.0"/>
         </item>
     </channel>
 </rss>
