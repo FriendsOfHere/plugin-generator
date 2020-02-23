@@ -1,14 +1,14 @@
 {
-   "name": "<%= pluginName %>",
-   "version": "1.0.0",
-   "identifier": "<%= pluginIdentifier %>",<% if (pluginDescription) { %>
-   "description": "<%= pluginDescription %>",<% } %>
-   "icon": "icon.png",<% if (authorName) { %>
-   "createdBy": "<%= authorName %>",<% } %><% if (authorWebsite) { %>
-   "website": "<%= authorWebsite %>",<% } %>
-   "appcast": "https://raw.githubusercontent.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/master/appcast.xml",
-   "script": "index.js",
-   "defaultCategory": "<%= defaultCategory %>",<% if (renderComponents) { %>
-   "displayOn": <%- JSON.stringify(renderComponents) %>, <% } %><% if (preferences) { %>
-   "preferences": <%- JSON.stringify(preferences,null,4) %> <% } %>
+	"name": "<%= pluginName %>",
+	"version": "1.0.0",
+	"identifier": "<%= pluginIdentifier %>",<% if (pluginDescription) { %>
+	"description": "<%= pluginDescription %>",<% } %>
+	"icon": "icon.png",<% if (authorName) { %>
+	"createdBy": "<%= authorName %>",<% } %><% if (authorWebsite) { %>
+	"website": "<%= authorWebsite %>",<% } %>
+	"appcast": "https://raw.githubusercontent.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/master/appcast.xml",
+	"script": "index.js",
+	"defaultCategory": "<%= defaultCategory %>",<% if (renderComponents) { %>
+	"displayOn": <%- JSON.stringify(renderComponents) %>, <% } %><% if (preferences) { %>
+	"preferences": <%- JSON.stringify(preferences,null,4) %> <% } %>
 }
