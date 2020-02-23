@@ -99,6 +99,7 @@ new Promise((resolve, reject) => {
           name: 'authorName',
           type: 'text',
           message: 'Author name',
+          initial: "Lifesign"
         },
         {
           name: 'authorWebsite',
@@ -111,6 +112,7 @@ new Promise((resolve, reject) => {
               s
             ) ||
             'Invalid url format',
+          initial: (prev, values) => `https://github.com/FriendsOfHere/${values.pluginIdentifier.split('.').pop()}`
         },
         {
             type: 'select',
