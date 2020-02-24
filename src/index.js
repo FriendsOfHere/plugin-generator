@@ -188,9 +188,11 @@ new Promise((resolve, reject) => {
     const del = f => fs.delete(path.resolve(destDir, f));
 
     fs.copyTpl(boilerplate, destDir, tpl);
-    //git stuff
+    //dot stuff
     mv('gitignore', '.gitignore');
     mv('gitattributes', '.gitattributes');
+    mv('editorconfig', '.editorconfig');
+    mv('versionrc', '.versionrc');
 
     const license = require(`spdx-license-list/licenses/${data.license}`);
     
