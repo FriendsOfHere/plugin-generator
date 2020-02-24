@@ -80,15 +80,15 @@ new Promise((resolve, reject) => {
         {
           name: 'pluginIdentifier',
           type: 'text',
-          message: `Identifier ${reset.dim('(app.here.identifier)')}`,
+          message: `Identifier ${reset.dim('(foh.identifier)')}`,
           validate: s =>
             // discussed with Here group, no limit naming convention with `app.here` prefix for now
             // /^app\.here\.([a-zA-Z-]{2,})$/.test(s.trim()) ||
             // Use Java Package Name Style convention
-            /^([a-zA-Z-]{2,}).([a-zA-Z-]{2,}).([a-zA-Z-]{2,})$/.test(s.trim()) ||
+            /^([a-zA-Z-]{2,})(.[a-zA-Z-]{2,}){1,}$/.test(s.trim()) ||
             'Invalid package name format',
           format: s => s.toLowerCase(),
-          initial: "app.here.helloworld"
+          initial: "foh.helloworld"
         },
         {
           name: 'pluginDescription',
