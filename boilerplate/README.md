@@ -10,11 +10,11 @@
 
 ### One Click  (Recommend)
 
-👉 <a href="https://jump.here.app/?installPlugin?title=i18n&url=https://github.com/FriendsOfHere/<%= pluginIdentifier.split('.').pop() %>/releases/latest/download/app.here.<%= pluginIdentifier.split('.').pop() %>.hereplugin">Click Here 🔌</a>
+👉 <a href="https://jump.here.app/?installPlugin?title=<%= releasePluginName %>&url=https://github.com/FriendsOfHere/<%= pluginIdentifier.split('.').pop() %>/releases/latest/download/<%= releasePluginName %>.hereplugin">Click Here 🔌</a>
 
 ### Manually
 1. Go [releases](https://github.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/releases/latest/) page
-2. Download the latest release & double click the `app.here.<%= pluginIdentifier.split(".").pop() %>.hereplugin`
+2. Download the latest release & double click the `<%= releasePluginName %>.hereplugin`
 
 ## Feature
 - TBD

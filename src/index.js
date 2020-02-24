@@ -14,6 +14,17 @@ const pkg = require('../package.json');
 
 const licenseList = Array.from(require('spdx-license-list/simple'));
 
+const capitalize = (s) => {
+  if (typeof s !== 'string') return ''
+    //check -  foh.test-me
+    if (s.indexOf('-') != -1) {
+      return s.split('-').map((e) => {
+        return e.charAt(0).toUpperCase() + e.slice(1)
+      }).join('-')
+    }
+  return s.charAt(0).toUpperCase() + s.slice(1)
+}
+
 args.option(
   'path',
   'The root directory in which to create the Here plugin',
@@ -164,6 +175,7 @@ new Promise((resolve, reject) => {
 
     const tpl = Object.assign(data, {
       year: new Date().getFullYear(),
+      releasePluginName: capitalize(data.pluginIdentifier.split('.').pop())
     });
 
     const destDir = extractToSingleFolder ? `${dir}/${data.pluginIdentifier}`: dir

@@ -8,11 +8,11 @@
 
 ### 一键安装  (推荐)
 
-👉 <a href="https://jump.here.app/?installPlugin?title=i18n&url=https://github.com/FriendsOfHere/<%= pluginIdentifier.split('.').pop() %>/releases/latest/download/app.here.<%= pluginIdentifier.split('.').pop() %>.hereplugin">点击这里 🔌</a>
+👉 <a href="https://jump.here.app/?installPlugin?title=<%= releasePluginName %>&url=https://github.com/FriendsOfHere/<%= pluginIdentifier.split('.').pop() %>/releases/latest/download/<%= releasePluginName %>.hereplugin">点击这里 🔌</a>
 
 ### 手动安装
 1. 打开 [releases](https://github.com/FriendsOfHere/<%= pluginIdentifier.split(".").pop() %>/releases/latest/) page
-2. 下载最新的 release 版本，双击 `app.here.<%= pluginIdentifier.split(".").pop() %>.hereplugin` 即可安装
+2. 下载最新的 release 版本，双击 `<%= releasePluginName %>.hereplugin` 即可安装
 
 ## 特色
 - TBD
