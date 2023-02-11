@@ -35,7 +35,7 @@
     "ora": "^4.0.3",
     "prompts": "^2.3.0",
     "spdx-license-list": "^6.1.0",
-    "update-notifier": "^4.1.0",
+    "update-notifier": "^6.0.2",
     "yosay": "^2.0.2"
   }
 }
